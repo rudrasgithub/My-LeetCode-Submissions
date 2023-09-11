@@ -12,9 +12,7 @@ class Solution:
             nonlocal diameter
             left_height=longest_path(root.left)
             right_height=longest_path(root.right)
-            
             diameter=max(diameter,left_height+right_height)
             return max(left_height,right_height)+1
-        
         longest_path(root)
         return diameter
