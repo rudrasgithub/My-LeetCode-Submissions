@@ -5,7 +5,8 @@ class Solution:
         mx=-sys.maxsize-1
         for i in range(len(nums)):
             s+=nums[i]
-            mx=max(mx,s)
+            if s>mx:
+                mx=s
             if s<0:
                 s=0
         return mx
