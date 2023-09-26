@@ -3,7 +3,7 @@ class Solution:
         mxprofit=0
         mn=prices[0]
         n=len(prices)
-        for i in range(n):
+        for i in range(1,n):
             if prices[i]<mn:
                 mn=prices[i]
             mxprofit=max(mxprofit,prices[i]-mn)
